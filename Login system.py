@@ -30,12 +30,12 @@ while True:
                 with open("user_data.csv", "r") as read_obj:
                     csv_reader = DictReader(read_obj)
                     for row in csv_reader:
-                      if row["Username"] == existing_user_id and row["Password"] == existing_password:
-                        print("Valid password")
-                        print("Welcome back %s, it's been a while" % existing_user_id)
-                        break
-                      else:
-                        print("Password or username is incorrect try again")
+                        if row["Username"] == existing_user_id and row["Password"] == existing_password:
+                            print("Valid password")
+                            print("Welcome back %s, it's been a while" % existing_user_id)
+                            break
+                        else:
+                            print("Password or username is incorrect try again")
                 continue
 
         break
